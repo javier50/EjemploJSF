@@ -1,3 +1,6 @@
+#WorkBench
+*.bak
+
 # Compiled class file
 *.class
 
@@ -11,6 +14,7 @@
 .mtj.tmp/
 
 # Package Files #
+target/*
 *.jar
 *.war
 *.ear
