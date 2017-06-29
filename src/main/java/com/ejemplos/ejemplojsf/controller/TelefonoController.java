@@ -1,8 +1,8 @@
 package com.ejemplos.ejemplojsf.controller;
 
 import com.ejemplos.ejemplojsf.entity.Telefono;
-import com.ejemplos.ejemplojsf.controller.util.JsfUtil;
-import com.ejemplos.ejemplojsf.controller.util.JsfUtil.PersistAction;
+import com.ejemplos.ejemplojsf.util.JsfUtil;
+import com.ejemplos.ejemplojsf.util.JsfUtil.PersistAction;
 import com.ejemplos.ejemplojsf.facade.TelefonoFacade;
 
 import java.io.Serializable;

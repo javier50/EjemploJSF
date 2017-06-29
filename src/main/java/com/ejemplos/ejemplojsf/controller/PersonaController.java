@@ -1,8 +1,8 @@
 package com.ejemplos.ejemplojsf.controller;
 
 import com.ejemplos.ejemplojsf.entity.Persona;
-import com.ejemplos.ejemplojsf.controller.util.JsfUtil;
-import com.ejemplos.ejemplojsf.controller.util.JsfUtil.PersistAction;
+import com.ejemplos.ejemplojsf.util.JsfUtil;
+import com.ejemplos.ejemplojsf.util.JsfUtil.PersistAction;
 import com.ejemplos.ejemplojsf.facade.PersonaFacade;
 
 import java.io.Serializable;
@@ -10,17 +10,14 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
-import javax.ejb.SessionContext;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
-import javax.transaction.UserTransaction;
 
 @Named("personaController")
 @SessionScoped
@@ -168,7 +165,5 @@ public class PersonaController implements Serializable {
                 return null;
             }
         }
-
     }
-
 }
